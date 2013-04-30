@@ -1,0 +1,31 @@
+<div id="viewCart">
+<div id="shopping_cart">
+    <a href="#">Carrito:{Cantidad}</a>
+</div>
+<section id="showCart">
+<ul id="listProduct">
+        {ProductCart}
+</ul>
+
+<fieldset>
+    <label>
+        <span class="titleCart">Transporte</span>
+        <span class="price">{PrecioTransporte}</span>
+    </label>
+    <label>
+        <span class="titleCart">Iva</span>
+        <span class="price">{PrecioIva}</span>
+    </label>
+    <label>
+        <span class="titleCart">Total</span>
+        <span class="price">{PrecioTotal}</span>
+    </label>
+</fieldset>
+
+<div>
+    <a class="margin_confirmar eliminarCart" {eliminarCart}> Eliminar </a>
+    <a class="continuar" href="/2daw6/buy">Confirmar</a>
+</div>
+
+</section>
+</div>

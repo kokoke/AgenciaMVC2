@@ -1,0 +1,51 @@
+<div id="breadcrumbs">
+    <section class="row">
+        <a href="/2daw6">Home</a> ><a href="/2daw6/vols"> {url} </a> > {nom_producto}
+    </section>
+</div>
+<div class="container_article"><!-- imgen de fondo -->
+<article id="list_productos" class="row art artProduct">
+
+    <h3><title class="row">{Titulo}</title></h3>
+
+    <section class="cuerpo_producto cuerpoProduct">
+        <canvas class="canvas_imgProduct"></canvas>
+        <ul class="individual">
+
+            <li class="container_novedades container_product paddingCero">
+                <div class="containerImage">
+                    <fieldset class="imgSmall">
+                        <canvas class="imgCanvas img1"></canvas>
+                        <canvas class="imgCanvas img2"></canvas>
+                        <canvas class="imgCanvas img3"></canvas>
+                    </fieldset>
+                    <fieldset class="bigImg">
+                        <canvas class="imgBig"></canvas>
+                    </fieldset>
+                </div>
+                <fieldset class="textProduct">f
+                    <p>La oferta: <b>{nombre_oferta}</b></p>
+                    <p>Disponible desde <b>{fech_ini}</b> hasta el <b>{fech_fin}</b></p>
+                    <p>Por el modico precio de:</p><p> {precio} €</p>
+                </fieldset>
+            </li>
+            <li>
+                <a class="reserv detalles_margin" {addOferta}>Reservar</a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Otros interesantes</h3>
+        <center>
+        <canvas class="canvas_other img4"></canvas>
+        <canvas class="canvas_other img5"></canvas>
+        <canvas class="canvas_other img6"></canvas>
+    </center>
+    </section>
+
+</article>
+</div>
+
+
+

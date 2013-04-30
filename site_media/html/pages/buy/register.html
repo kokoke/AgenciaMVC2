@@ -1,0 +1,149 @@
+<form action="buy/aceptar" method="post" id="compra">
+<div class="container_article"><!-- imgen de fondo -->
+
+        <section id="compra">
+            <header>Datos Reserva</header>
+            <article id="cancelacion">
+                <div>
+                    <span class="titleCancelacion">Observaciones:<br> </span>
+
+                    <span class="textReserva">
+                        Si se cancela a partir del día 2013-04-05, tendría un coste de : 30€
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, ante eget facilisis tincidunt, augue justo adipiscing turpis, ut dictum erat leo mattis risus. Nam in massa et mi faucibus porta eget sit amet urna. Aliquam pharetra ipsum sed sem luctus posuere. Integer faucibus ornare nulla vel sagittis.
+                    </span>
+                </div>
+            </article>
+            <article id="cancelacion">
+                <div>
+                    <span class="titleCancelacion">Todos los campos son necesarios<br> </span>
+                    <span class="titleCancelacion">* (opcionales)<br> </span>
+                </div>
+            </article>
+            <article id="paso1">
+                <header><span class="circulo">1</span><span class="tituloReserva">Sugerencias para su viaje</span></header>
+                <input type="checkbox">
+                <span>
+                        SEGURO DE ASISTENCIA EN VIAJE Y ANULACIÓN AMPLIA COBERTURA:
+                </span><span class="rojo">*</span>
+                <span class="precioReserva">
+                    <strong>10 €</strong>
+                </span>
+                <span class="textReserva">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, ante eget facilisis tincidunt, augue justo adipiscing turpis, ut dictum erat leo mattis risus. Nam in massa et mi faucibus porta eget sit amet urna. Aliquam pharetra ipsum sed sem luctus posuere. Integer faucibus ornare nulla vel sagittis.
+                    </span>
+            </article>
+            <article id="paso2">
+                <header><span class="circulo">2</span><span class="tituloReserva">Desglose de precio</span></header>
+
+                    <ul id="listProduct">
+                            {ProductCart}
+                    </ul>
+
+                    <fieldset>
+                        <label>
+                            <span class="titleCart">Transporte</span>
+                            <span class="price">{PrecioTransporte}</span>
+                        </label>
+                        <label>
+                            <span class="titleCart">Iva</span>
+                            <span class="price">{PrecioIva}</span>
+                        </label>
+                        <label>
+                            <span class="titleCart">Total</span>
+                            <span class="price">{PrecioTotal}</span>
+                        </label>
+                    </fieldset>
+
+            </article>
+            <article id="paso3">
+                <header><span class="circulo">3</span><span class="tituloReserva">Datos del Comprador</span></header>
+                <section id="comprador">
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" id="name"><span class="requeridField" id="reqname">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>Apellidos</span>
+                        <input type="text" id="firstname"><span class="requeridField" id="reqfirstname">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>Telefono</span>
+                        <input type="tel" id="phone"><span class="requeridField" id="reqphone">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" id="email"><span class="requeridField" id="reqemail">Campo Obligatorio</span>
+                    </label>
+                </section>
+            </article>
+            <article id="paso4">
+                <header><span class="circulo">4</span><span class="tituloReserva">Datos de Pago</span></header>
+                <section id="tipoPago">
+                    <label>
+                        <span>Tipo de tarjeta</span>
+                        <select class="select" id="selectTarjeta">
+                            <option>Seleccione un tipo de tarjeta</option>
+                            <option>Tarjeta Visa Halcón</option>
+                            <option>Otras tarjetas</option>
+                            <option>American Express</option>
+                            <option>Diners Club</option>
+                        </select><span class="requeridField" id="reqselectTarjeta">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>Nombre del titular</span>
+                        <input type="text" id="nameTitular"><span class="requeridField" id="reqnameTitular">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>Número de tarjeta(sin espacios)</span>
+                        <input type="text" id="numTarjeta"><span id="reqnumTarjeta" class="requeridField">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>Válida hasta</span>
+                        <input type="text" id="fechaTarjeta" class="peque"><span class="requeridField" id="reqfechaTarjeta">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>CCV</span>
+                        <input type="text" id="ccv" class="peque"><span class="requeridField" id="reqccv">Campo Obligatorio</span>
+                    </label>
+                    <label>
+                        <span>Deseo una factura</span>
+                        <input type="checkbox" class="check">
+                    </label>
+                </section>
+            </article>
+            <article id="condiciones">
+                <header><span class="tituloReserva rojo">Condiciones</span></header>
+                <input type="checkbox" id="condicioneschk">
+                <span>
+                        He leido y acepto las <a class="enlace">Condiciones Generales </a>de este viaje
+                </span><span class="requeridField" id="reqcondicioneschk">Obligatorio</span>
+                <br>
+                <input type="checkbox" id="politica">
+                <span>
+                        He leído y acepto la <a class="enlace">Política de Protección de Datos</a> que regula este registro.
+                </span><span class="requeridField" id="reqpolitica">Obligatorio</span>
+
+
+            </article>
+            <footer>
+                <a type="submit" class="volverBtn" href="home">Volver</a>
+                <button class="comprarBtn" id="Comprar">Comprar</button>
+            </footer>
+        </section>
+
+        <section id="comprasatisfactoria">
+            <article id="resultado">
+                <header><span class="tituloReserva">Resultado Operacion</span></header>
+
+                <span>
+                        La compra se ha realizado satisfactoriamente<br>
+                </span>
+                <a type="submit" class="volverBtn" href="home">Inicio</a>
+            </article>
+        </section>
+
+</div>
+</form>
+
+
